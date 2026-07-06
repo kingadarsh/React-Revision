@@ -1,0 +1,7 @@
+.NameCompo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 168, 232);
+    color: black;
+}

@@ -1,0 +1,12 @@
+.Navbar-heading{
+    background-color: black;
+    color: White;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bolder;
+    font-size: large;
+
+}

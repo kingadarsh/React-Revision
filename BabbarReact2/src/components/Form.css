@@ -1,0 +1,52 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.New-Product-Title,
+.New-Product-Date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.New-Product-Title label,
+.New-Product-Date label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #2c292b;
+}
+
+.New-Product-Title input,
+.New-Product-Date input {
+    width: 100%;
+    max-width: 25rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font: inherit;
+}
+
+.New-Product-Button {
+    align-self: flex-end;
+
+    background-color: #40005d;
+    color: white;
+
+    border: none;
+    border-radius: 12px;
+
+    padding: 0.75rem 1.5rem;
+
+    cursor: pointer;
+    font: inherit;
+}
+
+.New-Product-Button:hover {
+    background-color: #510674;
+}
+
+.New-Product-Button:active {
+    background-color: #3a0052;
+}

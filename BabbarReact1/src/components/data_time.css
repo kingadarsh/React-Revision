@@ -1,0 +1,8 @@
+.DataTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 168, 232);
+    gap: 5px;
+    /* color: black; */
+}

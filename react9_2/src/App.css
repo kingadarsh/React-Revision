@@ -1,0 +1,87 @@
+body {
+    background-color: #DDDDDD;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    
+}
+
+.postComponent {
+    background-color: white;
+    width: 550px;
+    min-height: 700px;
+    border-radius: 8px;
+    padding: 12px;
+    margin:10px;
+}
+
+.topOfPost {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.LeftOfHeader {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.Name_Time_Globe {
+    display: flex;
+    flex-direction: column;
+}
+
+.NameH4 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.Time_Globe {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.Time p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+#globeLogo {
+    display: block;
+}
+
+.RightOfHeader{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.contentPost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentImg{
+    width: 500px;
+    height: 500px;
+    
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
+
+}
+
+.FooterLeft{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}

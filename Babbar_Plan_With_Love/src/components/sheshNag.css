@@ -1,0 +1,17 @@
+.SheshNag{
+    background-color: aliceblue;
+    color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Resetbtn{
+    border: none;
+    cursor: pointer;
+    background-color: aliceblue;
+    font-size: xx-large;
+    color: blue;
+}
+
