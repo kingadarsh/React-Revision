@@ -1,0 +1,80 @@
+.Card-First-Div {
+    position: relative;
+    width: 700px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    padding: 2rem;
+    padding-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ImagDiv {
+    position: absolute;
+    top: -60px;
+    left: 40px;
+
+    width: 140px;
+    height: 140px;
+}
+
+.ImagDiv::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 10px;
+
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #8b5cf6;
+    z-index: -1;
+}
+
+.ImagDiv img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name-desgination {
+    text-align: center;
+}
+
+.name-desgination h3:first-child {
+    font-size: 1.8rem;
+    color: #222;
+}
+
+.name-desgination h3:last-child {
+    font-size: 0.9rem;
+    color: #b794f4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 6px;
+}
+
+.symbols-para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.symbol-left,
+.symbol-right {
+    color: #8b5cf6;
+    font-size: 1.5rem;
+}
+
+.para {
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.7;
+    color: #61718a;
+}
