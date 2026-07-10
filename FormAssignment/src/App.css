@@ -1,0 +1,115 @@
+/* --- Base Form Layout --- */
+.FormDiv {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.MainForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* --- Label & Input Stacking --- */
+.MainForm>div:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Core typography */
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+/* Text Fields, Select Box Styles */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+/* --- Fieldsets (Checkboxes & Radios) --- */
+fieldset {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0;
+}
+
+legend {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111827;
+    padding: 0 8px;
+}
+
+fieldset p {
+    font-size: 13px;
+    color: #6b7280;
+    margin: 2px 0 12px 28px;
+    /* Indents description text under the label */
+}
+
+/* Base rule for wrapper's paragraph description on Push notification */
+fieldset>p:first-of-type {
+    margin: 0 0 16px 0;
+    font-size: 14px;
+}
+
+/* Aligning Checkbox/Radio inline with their labels */
+fieldset input[type="checkbox"],
+fieldset input[type="radio"] {
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+fieldset label {
+    font-weight: 500;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* Spacing out the radio button options */
+fieldset input[type="radio"] {
+    margin-top: 12px;
+}
+
+/* --- Submit Button --- */
+button {
+    background-color: #4f46e5;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    align-self: flex-start;
+    /* Keeps the button from stretching full width */
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #4338ca;
+}
