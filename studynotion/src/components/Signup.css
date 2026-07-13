@@ -1,0 +1,237 @@
+/* MAIN CONTAINER */
+.login-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 50px 80px;
+    background: #000814;
+    color: white;
+}
+
+/* LEFT SECTION */
+.login-content {
+    width: 500px;
+}
+
+.login-heading h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.login-heading p {
+    color: #838894;
+    font-size: 1.3rem;
+}
+
+.highlight {
+    color: #47A5C5;
+    font-style: italic;
+}
+
+/* TOGGLE */
+.Toggle-stu-inst {
+    width: fit-content;
+    background: #161D29;
+    padding: 6px;
+    border-radius: 999px;
+    margin: 35px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.toggle-stu,
+.toggle-inst {
+    border: none;
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background: transparent;
+    color: #999DAA;
+}
+
+.toggle-inst {
+    background: #000814;
+    color: white;
+}
+
+/* FORM */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.login-form label {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* NAME FIELDS */
+.first-last-name-inpt {
+    display: flex;
+    gap: 20px;
+}
+
+.first-last-name-inpt>div {
+    flex: 1;
+}
+
+/* INPUTS */
+.login-form input {
+    width: 100%;
+    padding: 16px;
+    background: #161D29;
+    border: 1px solid #2C333F;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.login-form input::placeholder {
+    color: #6E727F;
+}
+
+.login-form input:focus {
+    border-color: #FFD60A;
+}
+
+/* PASSWORD SECTION */
+.create-Pass-field {
+    display: flex;
+    gap: 20px;
+}
+
+.create-Pass-field>div {
+    flex: 1;
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    padding-right: 50px;
+}
+
+.eye-btn {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: #838894;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* BUTTON */
+.signin-btn {
+    margin-top: 25px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #FFD60A;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* DIVIDER */
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background: #2C333F;
+}
+
+.divider p {
+    color: #838894;
+}
+
+/* GOOGLE BUTTON */
+.google-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #2C333F;
+    background: transparent;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* RIGHT IMAGE SECTION */
+.image-section {
+    position: relative;
+    width: 550px;
+    height: fit-content;
+}
+
+.bg-bordered {
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.picOfgirl {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+    .login-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .image-section {
+        width: 450px;
+    }
+}
+
+@media (max-width: 700px) {
+    .login-content {
+        width: 100%;
+    }
+
+    .first-last-name-inpt,
+    .create-Pass-field {
+        flex-direction: column;
+    }
+
+    .image-section {
+        width: 100%;
+    }
+
+    .login-heading h2 {
+        font-size: 2.2rem;
+    }
+}
