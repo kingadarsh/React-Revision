@@ -4,7 +4,7 @@ import { AppContext } from '../context/AppContext';
 
 function Pagination() {
 
-    const {page,totalPages,handlePageChange}=useContext(AppContext);
+    const {loading,page,totalPages,handlePageChange}=useContext(AppContext);
 
 
     function onClickPrevHandler(){
@@ -31,7 +31,7 @@ function Pagination() {
     <div className='Pagination'>
         <div>
         {            
-            page===1?
+            page===1 || loading?
             null:(<button 
             className='btn'
             onClick={onClickPrevHandler}
@@ -42,7 +42,7 @@ function Pagination() {
         }
         
         {
-            page===totalPages?
+            page===totalPages || loading?
             null:
             <button 
             className='btn'
