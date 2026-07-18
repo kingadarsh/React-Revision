@@ -1,0 +1,10 @@
+.mainBlogs {
+    width: 100%;
+    max-width: 900px;
+    margin: 90px auto 110px;
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
