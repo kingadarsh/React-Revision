@@ -12,12 +12,19 @@ export default function AppContextProvider({children}){
     const [page,setPage]=useState(1);
     const [totalPages,setTotalPages]= useState(null);
 
-    async function fetchData(page=1){
-
+    async function fetchData(page=1,tag=null, category){
+        setLoading(true);
+        let url=`${baseUrl}?page=${page}`;
+        if(tag){
+            url+=`&tag=${tag}`
+        }
+        if(category){
+            url+=`&category=${category}`
+        }
         try{
-            setLoading(true);
+            
             if(baseUrl){
-                const url=`${baseUrl}?page=${page}`;
+                //  url=`${baseUrl}?page=${page}`;
                 let data= await axios.get(url);
                 data=data.data;
                 console.log(data);
@@ -48,9 +55,9 @@ export default function AppContextProvider({children}){
         // fetchData(page);
     }
 
-useEffect (()=>{
-    fetchData(page);
-},[page])
+// useEffect (()=>{
+//     fetchData((page));
+// },[page])
 
 
 
